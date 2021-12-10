@@ -3,7 +3,7 @@ on: [push]
 jobs:
   tests:
     runs-on: ubuntu-20.04
-    container: damingondiwa/computational-workflows:damingoflow2
+    container: damingondiwa/computational-workflows
 
     steps:
       - name: Checkout code
