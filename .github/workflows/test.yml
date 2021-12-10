@@ -1,9 +1,9 @@
-name: Wallet CI
+name: Wallet 
 on: [push]
 jobs:
   tests:
     runs-on: ubuntu-20.04
-    container: damingondiwa/computational-workflows:damingoflow2
+    container: damingondiwa/computational-workflows:latest
 
     steps:
       - name: Checkout code
@@ -12,5 +12,6 @@ jobs:
       - name: Run tests
         run: |
           python3 -m pytest
+
 
 
